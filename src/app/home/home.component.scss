@@ -1,0 +1,87 @@
+.primary-section {
+    background-color: #f1ede8;
+}
+
+.home-section {
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.lg-padding {
+    padding-top: 116px;
+    padding-bottom: 116px;
+}
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+}
+
+.get-quote-btn {
+    padding: .875rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    letter-spacing: .47px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+    font-weight: 500;
+    background-color: #004200;
+    border-radius: 2px;
+    border: 0;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.image-1 {
+    background-image: url('/assets/images/tree2-bg.jpg');
+    background-size: cover;
+    height: 525px;
+}
+
+.image-2 {
+    background-image: url('/assets/images/tree6-bg.jpg');
+    background-size: cover;
+    height: 525px;
+}
+
+.display-4 {
+    font-size: 3.8rem;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: #004200;
+    border-color: #004200;
+}
+
+.fa-tree, .fa-flask {
+    margin-right: 3px;
+}
+.fa-tree {
+    color: #004200;
+}
+.fa-flask {
+    color: #8e008e;
+}
+
+.bg-light-gray {
+    background-color: #f5f5f5;
+}
+
+.active-link {
+    color: #0b6f0b !important;
+}
+
+@media (min-width: 768px) {
+    .p-md-6 {
+        padding: 20px !important;
+    }
+}

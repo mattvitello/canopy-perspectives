@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, label, a {
+    font-size: 15px;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: #0b6f0b;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pt-6 {
+    padding-top: 4rem!important;
+}
+.pb-6 {
+    padding-bottom: 4rem!important;
+}
+
+.rounded {
+    border-radius: .25rem!important;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
