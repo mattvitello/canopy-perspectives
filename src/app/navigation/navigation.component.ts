@@ -18,4 +18,11 @@ export class NavigationComponent implements OnInit {
       el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }
   }
+
+  scrollTop() {
+    let el = document.getElementById('pageStart');
+    if (el) {
+      el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+  }
 }

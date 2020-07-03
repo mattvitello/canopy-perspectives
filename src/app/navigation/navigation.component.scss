@@ -1,13 +1,17 @@
-.nav-item {
-    a {
-        font-size: 17px;
-        color: #000;
-        margin-right: 10px;
-    }
-    a:focus {
-        color: #000;
-    }
-    a:hover {
-        color: #0b6f0b;
+.navbar.fixed-top {
+    background-color: #FFF;
+    
+    .nav-item {
+        a {
+            font-size: 17px;
+            color: #000;
+            margin-right: 10px;
+        }
+        a:focus {
+            color: #000;
+        }
+        a:hover {
+            color: #0b6f0b;
+        }
     }
 }
