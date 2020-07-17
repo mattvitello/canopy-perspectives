@@ -8,7 +8,7 @@
     <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
 </div>-->
 
-<div class="home-section lg-padding primary-section" id="pageStart">
+<div class="home-section lg-padding primary-section bg-tan" id="pageStart">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -50,7 +50,7 @@
         </div>
         <div class="row">
             <div class="col-6">
-                <h4 class="mb-3"><i class="fas fa-flask"></i> Science</h4>
+                <h4 class="mb-3"><i class="fas fa-tree"></i> Tree Care</h4>
                 <p>We believe that all humans deserve access to a greenspace on the basis of health and safety. Over
                     time
                     when there is a tree in these spaces, maintenance is often imperative. Our team works hard to
@@ -60,7 +60,7 @@
                     make your greenspace a safe part of your lifestyle.</p>
             </div>
             <div class="col-6">
-                <h4 class="mb-3"><i class="fas fa-tree"></i> Tree Care</h4>
+                <h4 class="mb-3"><i class="fas fa-flask"></i> Science</h4>
                 <p>Scientific research about our ecological communities (trees, us, fungus, plants, insects.. etc)
                     brings
                     category to a world that does not desire order. Although it can only help us to learn, and better
@@ -82,9 +82,9 @@
     </div>
 </div>
 
-<div class="home-section image-1 parallax"></div>
+<!--<div class="home-section image-1 parallax"></div>-->
 
-<div class="home-section">
+<div class="home-section bg-green">
     <div class="container pt-6 pb-6">
         <div class="row">
             <div class="col-12">
@@ -95,20 +95,44 @@
     </div>
 </div>
 
-<div class="home-section bg-light-gray">
+<div class="home-section" id="storiesSection">
     <div class="container pt-6 pb-6">
+        <div class="row position-absolute pl-3">
+            <h3 class="mb-4">Stories</h3>
+        </div>
         <div class="row">
-            <div class="col-12">
-                <h3 class="mb-4">Stories</h3>
-                <p class="lg-padding">TO-DO...</p>
+            <div class="col-3 d-flex">
+                <div class="project-side-menu justify-content-center align-self-center">
+                    <h4 *ngFor="let story of stories; index as i;"
+                        (click)="selectStory(i)"
+                        [ngClass]="{'active': story.navTitle === activeStory.navTitle}"
+                        class="pointer mb-3">{{story.navTitle}}</h4>
+                </div>
+            </div>
+            <div class="col-9 project-content">
+                <div class="row">
+                    <div class="col-4 img-wrapper pr-4">
+                        <img *ngFor="let imgPath of activeStory.images" src="{{imgPath}}" />
+                    </div>
+                    <div class="col-8 pl-4">
+                        <div>
+                            <h1 class="mb-4">{{activeStory.title}}</h1>
+                            <div [innerHTML]="activeStory.htmlText"></div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="project-details">
+
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="home-section image-2 parallax"></div>
 
-<div class="home-section" id="contactSection">
+<!--<div class="home-section image-2 parallax"></div>-->
+
+<div class="home-section bg-gray" id="contactSection">
     <div class="container pt-6 pb-6">
         <div class="row pb-4">
             <div class="col-12">
